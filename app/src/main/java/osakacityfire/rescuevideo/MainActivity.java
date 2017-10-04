@@ -44,5 +44,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //ビデオ３
+        mView.findViewById(R.id.btnVideo3).setOnClickListener(new OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(mActivity, VideoActivity.class);
+                intent.putExtra("index", 3);
+                startActivity(intent);
+            }
+        });
     }
 }

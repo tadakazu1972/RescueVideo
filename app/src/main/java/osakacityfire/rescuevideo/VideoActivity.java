@@ -31,12 +31,15 @@ public class VideoActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         Integer index = bundle.getInt("index");
-        Uri videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.storm);
+        Uri videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.adult);
         if ( index == 1 ){
-            videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.storm);
+            videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.adult);
         }
         if ( index == 2 ){
-            videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.waterfall);
+            videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.child);
+        }
+        if ( index == 3 ){
+            videoPath = Uri.parse("android.resource://" + mActivity.getPackageName() + "/" + R.raw.baby);
         }
         final VideoView videoView = (VideoView)findViewById(R.id.videoView);
         videoView.setMediaController(new MediaController(mActivity));

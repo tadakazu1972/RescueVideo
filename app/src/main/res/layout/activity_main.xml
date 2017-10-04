@@ -2,48 +2,142 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="#00dd00">
 
     <TextView
-        android:layout_marginTop="80dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="大阪市消防局　救急指導ビデオアプリ"
+        android:text="命を助けられるのは、あなたです。"
         android:textColor="#110011"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
         android:textAlignment="center"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#dddd00"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_marginLeft="40dp"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"/>
+
+        <TextView
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="１１９"
+            android:textColor="#ff0011"
+            android:textSize="36sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"/>
+
+        <TextView
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="AED"
+            android:textColor="#ff0011"
+            android:textSize="36sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OK？"
+        android:textColor="#ff0011"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="大丈夫！　　　　　　　　　　　　　\n落ち着いてボタンを押してください。"
+        android:textColor="#110011"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
         android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/btnVideo1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="動画１　再生"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:text="胸骨圧迫（おとな）"
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:layout_gravity="center"
         android:background="@drawable/red_button"/>
 
     <Button
         android:id="@+id/btnVideo2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="動画２　再生"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:text="胸骨圧迫（こども）"
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="center"
         android:background="@drawable/red_button"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="20dp"/>
 
-    <TextView
-        android:layout_margin="16dp"
+    <Button
+        android:id="@+id/btnVideo3"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:text="胸骨圧迫（赤ちゃん）"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:background="@drawable/red_button"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ビデオ再生後は画面下の戻る矢印でこの画面に戻ってください"
-        android:textColor="#dd0011"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:background="#00000000"
+            android:src="@drawable/kyokusyo"
+            android:scaleType="fitEnd"/>
+
+        <TextView
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="大阪市消防局"
+            android:textColor="#110011"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
