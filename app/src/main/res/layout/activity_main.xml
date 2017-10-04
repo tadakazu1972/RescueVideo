@@ -14,6 +14,7 @@
         android:text="命を助けられるのは、あなたです。"
         android:textColor="#110011"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_horizontal"
@@ -38,6 +39,7 @@
             android:text="１１９"
             android:textColor="#ff0011"
             android:textSize="36sp"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
 
         <CheckBox
@@ -53,6 +55,7 @@
             android:text="AED"
             android:textColor="#ff0011"
             android:textSize="36sp"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
@@ -65,6 +68,7 @@
         android:text="OK？"
         android:textColor="#ff0011"
         android:textSize="36sp"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_horizontal"/>
@@ -75,7 +79,8 @@
         android:gravity="center"
         android:text="大丈夫！　　　　　　　　　　　　　\n落ち着いてボタンを押してください。"
         android:textColor="#110011"
-        android:textSize="18sp"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center_horizontal"/>
