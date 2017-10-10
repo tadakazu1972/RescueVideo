@@ -2,53 +2,58 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#00dd00">
+            android:background="#99ff00">
 
 <LinearLayout android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <TextView
-        android:layout_margin="20dp"
-        android:padding="10dp"
+        android:padding="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="命を助けられるのは、あなたです。"
+        android:text="意識・呼吸がなければ、胸骨圧迫を！"
         android:textColor="#110011"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_gravity="center_horizontal"
-        android:background="#dddd00"/>
+        android:background="#ffff00"/>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <CheckBox
+        <ImageView
             android:layout_marginLeft="40dp"
             android:layout_weight="0.1"
             android:layout_width="0dp"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:src="@drawable/checkbox"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_weight="0.4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="１１９"
+            android:text="119"
             android:textColor="#ff0011"
-            android:textSize="36sp"
+            android:textSize="48sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
 
-        <CheckBox
+        <ImageView
             android:layout_weight="0.1"
             android:layout_width="0dp"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:src="@drawable/checkbox"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_weight="0.4"
@@ -57,20 +62,19 @@
             android:gravity="left"
             android:text="AED"
             android:textColor="#ff0011"
-            android:textSize="36sp"
+            android:textSize="48sp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 
     <TextView
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="OK？"
         android:textColor="#ff0011"
-        android:textSize="36sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginBottom="20dp"
@@ -82,7 +86,7 @@
         android:gravity="center"
         android:text="大丈夫！　　　　　　　　　　　　　\n落ち着いてボタンを押してください。"
         android:textColor="#110011"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_marginBottom="20dp"
@@ -92,7 +96,7 @@
         android:id="@+id/btnVideo1"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:text="胸骨圧迫（おとな）"
+        android:text="おとな\n成　人"
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginBottom="20dp"
@@ -103,7 +107,7 @@
         android:id="@+id/btnVideo2"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:text="胸骨圧迫（こども）"
+        android:text="こども\n小　児（1〜15歳）"
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="center"
@@ -114,7 +118,7 @@
         android:id="@+id/btnVideo3"
         android:layout_width="260dp"
         android:layout_height="70dp"
-        android:text="胸骨圧迫（赤ちゃん）"
+        android:text="あかちゃん\n乳　児（1歳未満）"
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="center"
